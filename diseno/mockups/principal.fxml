@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <VBox prefHeight="200.0" prefWidth="190.0" spacing="12.0" BorderPane.alignment="TOP_CENTER">
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+         <children>
+            <Label text="Menú">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" prefWidth="130.0" text="Equipos" />
+            <Button mnemonicParsing="false" prefWidth="130.0" text="Periféricos" />
+            <Label text="Leyenda">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="8.0">
+               <children>
+                  <Circle fill="#68cc6e" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Con equipo" />
+                  <Circle fill="#787e83" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Sin equipo" />
+               </children>
+            </HBox>
+            <Separator opacity="0.0" prefHeight="270.0" prefWidth="190.0" />
+            <Button mnemonicParsing="false" prefWidth="130.0" text="Cerrar sesión" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="550.0" fitWidth="700.0" layoutX="5.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#adb1b5" height="500.0" layoutX="30.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="650.0" />
+            <Label layoutX="297.0" layoutY="75.0" text="Plano de planta">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Circle fill="#68cc6e" layoutX="579.0" layoutY="120.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#68cc77" layoutX="579.0" layoutY="257.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#787e83" layoutX="498.0" layoutY="120.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#6ccc68" layoutX="126.0" layoutY="130.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#787e83" layoutX="579.0" layoutY="465.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="326.0" layoutY="25.0" text="Planta baja" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

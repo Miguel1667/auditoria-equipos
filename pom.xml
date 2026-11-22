@@ -45,7 +45,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.fundacion.App</mainClass>
+                            <mainClass>com.fundacion/com.fundacion.App</mainClass>
                         </configuration>
                     </execution>
                 </executions>
